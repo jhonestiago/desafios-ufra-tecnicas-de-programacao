@@ -1,4 +1,4 @@
-num = int(input('Insira um número inteiro qualquer: '))
+num:int = int(input('Insira um número inteiro qualquer: '))
 
 print(f'Tabuada de Multiplicação de {num}')
 print(f'{num} x 1 = {num * 1}')
