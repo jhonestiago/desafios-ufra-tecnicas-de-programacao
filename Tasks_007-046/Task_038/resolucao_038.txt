@@ -1,0 +1,17 @@
+ALGORITMO PrecoAutomovel
+VAR
+    STRING nomeAutomovel;
+    REAL precoFabrica, precoFinal, valorImpostos, percentagemRevendedor;
+INICIO
+    ESCREVA 'Insira o nome do automóvel: ';
+    LEIA nomeAutomovel;
+    ESCREVA 'Insira o preco de fábrica: ';
+    LEIA precoFabrica;
+
+    valorImpostos <- (precoFabrica * 45) / 100;
+    porcentagemRevendedor <- (precoFabrica * 28) / 100;
+    precoFinal <- precoFabrica + valorImpostos + percentagemRevendedor;
+
+    ESCREVA 'Nome do automóvel:', nomeAutomovel;
+    ESCREVA 'Preco Final: R$', precoFinal;
+FIM
